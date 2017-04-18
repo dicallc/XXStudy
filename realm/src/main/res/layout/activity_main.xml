@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaoxin.realm.MainActivity">
+
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="添加"
+      tools:layout_editor_absoluteX="5dp"
+      tools:layout_editor_absoluteY="0dp"
+      />
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="修改"
+      tools:layout_editor_absoluteX="93dp"
+      tools:layout_editor_absoluteY="0dp"
+      />
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="多对一添加"
+      tools:layout_editor_absoluteX="181dp"
+      tools:layout_editor_absoluteY="0dp"
+      />
+  <Button
+      android:id="@+id/button5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="多对一修改一"
+      tools:layout_editor_absoluteX="5dp"
+      tools:layout_editor_absoluteY="48dp"
+      />
+  <Button
+      android:id="@+id/query"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="查询数据"
+      tools:layout_editor_absoluteX="5dp"
+      tools:layout_editor_absoluteY="48dp"
+      />
+  <Button
+      android:id="@+id/clear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="清空数据"
+      tools:layout_editor_absoluteX="5dp"
+      tools:layout_editor_absoluteY="48dp"
+      />
+</LinearLayout>
