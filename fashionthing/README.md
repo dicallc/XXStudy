@@ -8,7 +8,7 @@
 - 2.使用map操作符操作Api(接口数据)，直接返回用户所想要的数据
 
 
-###一、写这个demo的原因？ ###
+### 一、写这个demo的原因？ ###
 
 #### ①对于rxjava的使用及学习，以及看看引入这么多库，看看到底能到达多少方法数 ####
 
@@ -22,6 +22,7 @@
 
 <Img src="https://raw.githubusercontent.com/dicallc/XXStudy/master/file/GIF.gif"></Img>
 
+[下载apk体验](https://github.com/dicallc/XXStudy/blob/master/file/fashionthing-debug.apk)
 
 亲测无卡顿...对于在电商项目中，最怕就是嵌套+嵌套，幸好这次阿里开源不是KPI项目
 
@@ -54,3 +55,5 @@
 			    
 			      }
     });
+
+### 3.接口来自辣品，如有侵权，请联系我 ###
