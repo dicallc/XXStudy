@@ -16,10 +16,41 @@
 最后看了下方法数
 随随意意超越20000+，当然v7包就18000罗，紧紧是为了实现一个联网，我觉得这样做实在很**愚蠢**，当然看清楚为了实现联网，不排除其他用法。
 
+
 #### ②阿里的开源的vlayout有多牛逼? ####
+预览图如下:
+
+<Img src="https://raw.githubusercontent.com/dicallc/XXStudy/master/file/GIF.gif"></Img>
 
 
-<Img src="../file/GIF.gif"></Img>
+亲测无卡顿...对于在电商项目中，最怕就是嵌套+嵌套，幸好这次阿里开源不是KPI项目
 
+项目中使用到vLayout的：
 
+- 通栏布局SingleLayoutHelper
+- Grid布局GridLayoutHelper
+- 线性布局LinearLayoutHelper
 
+### 2.可使用 mergeDelayError合并多个请求 ###
+
+[参考merge操作符](http://www.jianshu.com/p/9496bf8851d3)
+
+       HomeApi mHomeApi =
+	    (HomeApi) HttpMethods.getInstance().setServise(HomeApi.class);
+	    Flowable.mergeDelayError(mHomeApi.getEditBetterList(),mHomeApi.getHotList())
+		    .subscribeOn(Schedulers.io())
+		    .unsubscribeOn(Schedulers.io())
+		    .observeOn(AndroidSchedulers.mainThread())
+		    .subscribe(new ResourceSubscriber<HttpsResult<? extends List<? extends Object>>>() {
+			      @Override public void onNext(HttpsResult<? extends List<? extends Object>> mHttpsResult) {
+			    
+			      }
+			    
+			      @Override public void onError(Throwable t) {
+			    
+			      }
+			    
+			      @Override public void onComplete() {
+			    
+			      }
+    });

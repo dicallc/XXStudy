@@ -72,6 +72,26 @@ public class MainActivity extends AppCompatActivity {
         new ProgressSubscriber<List<LimitedVolume>>(mSubscriberOnNextListener, MainActivity.this));
     EditBetterListModel.getEditBetterList(
         new ProgressSubscriber<List<EditBetter>>(mListener, MainActivity.this));
+    // TODO: 2017/5/22 0022 可使用 mergeDelayError合并多个请求
+    //HomeApi mHomeApi =
+    //    (HomeApi) HttpMethods.getInstance().setServise(HomeApi.class);
+    //Flowable.mergeDelayError(mHomeApi.getEditBetterList(),mHomeApi.getHotList())
+    //    .subscribeOn(Schedulers.io())
+    //    .unsubscribeOn(Schedulers.io())
+    //    .observeOn(AndroidSchedulers.mainThread())
+    //    .subscribe(new ResourceSubscriber<HttpsResult<? extends List<? extends Object>>>() {
+    //      @Override public void onNext(HttpsResult<? extends List<? extends Object>> mHttpsResult) {
+    //
+    //      }
+    //
+    //      @Override public void onError(Throwable t) {
+    //
+    //      }
+    //
+    //      @Override public void onComplete() {
+    //
+    //      }
+    //    });
   }
 
   private void initView() {
